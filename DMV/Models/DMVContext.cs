@@ -9,5 +9,6 @@ namespace DMV.Models
     public class DMVContext : DbContext
     {
         public DbSet<DriverDataModel> Driver { get; set; }
+        public DbSet<DriversLicenseDataModel> DriversLicense { get; set; }
     }
 }
