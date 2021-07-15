@@ -1,28 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-<<<<<<< Updated upstream
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+
 
 namespace DMV.Models
 {
-    public class DriverModel
+    public class Driver
     {
+        [Required]
+        [Key]
+        public int Driver_ID { get; set; }
         [Required]
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         [Required]
         public string LastName { get; set; }
-=======
-using System.Linq;
-using System.Web;
-
-namespace DMV.Models.Entity
-{
-    public class DriverModel
-    {
-      
->>>>>>> Stashed changes
+        public DriversLicense License { get; set; }
     }
 }
