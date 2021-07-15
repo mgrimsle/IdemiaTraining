@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using DMV.App_Start;
+using Newtonsoft.Json.Serialization;
 
 namespace DMV
 {
@@ -9,15 +11,14 @@ namespace DMV
     {
         public static void Register(HttpConfiguration config)
         {
+
+            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver =
+                new CamelCasePropertyNamesContractResolver();
             // Web API configuration and services
             // Web API routes
+            AutofacConfig.Register();
             config.MapHttpAttributeRoutes();
 
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
         }
     }
 }
