@@ -92,12 +92,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DriversController.cs" />
+    <Compile Include="Controllers\DriversLicensesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107151412592_Initial.cs" />
+    <Compile Include="Migrations\202107151412592_Initial.designer.cs">
+      <DependentUpon>202107151412592_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DMVContext.cs" />
     <Compile Include="Models\DriverDataModel.cs" />
-    <Compile Include="Models\DriversLicenceDataModel.cs" />
+    <Compile Include="Models\DriversLicenseDataModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -111,7 +118,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202107151412592_Initial.resx">
+      <DependentUpon>202107151412592_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

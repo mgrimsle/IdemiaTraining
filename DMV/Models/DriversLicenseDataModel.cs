@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DMV.Models
 {
-    public class DriverLicenceDataModel
+    public class DriversLicenseDataModel
     {
         [Required]
         public string Id { get; set; }
@@ -12,6 +12,6 @@ namespace DMV.Models
         [Required]
         public DateTime BirthDate { get; set; }
         [Required]
-        public int DriverId { get; set; }
+        public DriverDataModel Driver { get; set; }
     }
 }
