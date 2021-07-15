@@ -7,7 +7,6 @@ namespace DMV.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-<<<<<<< Updated upstream:DMV/Migrations/202107151738278_init.Designer.cs
     public sealed partial class init : IMigrationMetadata
     {
         private readonly ResourceManager Resources = new ResourceManager(typeof(init));
@@ -15,15 +14,6 @@ namespace DMV.Migrations
         string IMigrationMetadata.Id
         {
             get { return "202107151738278_init"; }
-=======
-    public sealed partial class init2 : IMigrationMetadata
-    {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(init2));
-        
-        string IMigrationMetadata.Id
-        {
-            get { return "202107151730406_init2"; }
->>>>>>> Stashed changes:DMV/Migrations/202107151730406_init2.Designer.cs
         }
         
         string IMigrationMetadata.Source

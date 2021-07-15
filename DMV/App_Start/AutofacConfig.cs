@@ -1,24 +1,11 @@
-<<<<<<< Updated upstream
 ﻿using System.Reflection;
-=======
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
->>>>>>> Stashed changes
 using System.Web.Http;
 using Autofac;
 using Autofac.Integration.WebApi;
 using AutoMapper;
 using DMV.Models;
 
-<<<<<<< Updated upstream
 namespace DMV.App_Start
-=======
-namespace DMV.BL
->>>>>>> Stashed changes
 {
     public class AutofacConfig
     {
@@ -38,7 +25,6 @@ namespace DMV.BL
         {
             var config = new MapperConfiguration(cfg =>
             {
-<<<<<<< Updated upstream
                 cfg.AddProfile(new DriverMapper());
             });
 
@@ -51,18 +37,3 @@ namespace DMV.BL
         }
     }
 }
-=======
-                cfg.AddProfile(new DriversLicenseMapper());
-            });
-
-            bldr.RegisterInstance(config.CreateMapper())
-              .As<IMapper>()
-              .SingleInstance();
-            bldr.RegisterType<Driver>()
-                .InstancePerRequest();
-
-    
-        }
-    }
-}
->>>>>>> Stashed changes

@@ -1,5 +1,4 @@
-﻿using DMV.BL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -12,13 +11,9 @@ namespace DMV
     {
         public static void Register(HttpConfiguration config)
         {
-<<<<<<< Updated upstream
 
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver =
                 new CamelCasePropertyNamesContractResolver();
-=======
-            AutofacConfig.Register();
->>>>>>> Stashed changes
             // Web API configuration and services
             // Web API routes
             AutofacConfig.Register();

@@ -3,11 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-<<<<<<< Updated upstream:DMV/Migrations/202107151738278_init.cs
     public partial class init : DbMigration
-=======
-    public partial class init2 : DbMigration
->>>>>>> Stashed changes:DMV/Migrations/202107151730406_init2.cs
     {
         public override void Up()
         {
