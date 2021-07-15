@@ -64,7 +64,6 @@
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-<<<<<<< Updated upstream
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.1.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
@@ -90,7 +89,7 @@
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
-=======
+    </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
@@ -99,7 +98,6 @@
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
->>>>>>> Stashed changes
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -107,7 +105,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-<<<<<<< Updated upstream
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
@@ -130,8 +127,6 @@
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
-=======
->>>>>>> Stashed changes
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -170,30 +165,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-<<<<<<< Updated upstream
-    <Compile Include="Migrations\202107151738278_init.cs" />
-    <Compile Include="Migrations\202107151738278_init.designer.cs">
-      <DependentUpon>202107151738278_init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DMVContext.cs" />
     <Compile Include="Models\Entities\Driver.cs" />
     <Compile Include="Models\DriverMapper.cs" />
     <Compile Include="Models\DriverModel.cs" />
     <Compile Include="Models\Entities\DriversLicense.cs" />
-=======
-    <Compile Include="Migrations\202107151730406_init2.cs" />
-    <Compile Include="Migrations\202107151730406_init2.designer.cs">
-      <DependentUpon>202107151730406_init2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\DMVContext.cs" />
-    <Compile Include="Models\Entity\Driver.cs" />
-    <Compile Include="Models\Entity\DriversLicense.cs" />
     <Compile Include="Models\DriversLicenseMapper.cs" />
-    <Compile Include="Models\DriverModel.cs" />
     <Compile Include="Models\DriversLicenseModel.cs" />
->>>>>>> Stashed changes
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -207,16 +185,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-<<<<<<< Updated upstream
-    <EmbeddedResource Include="Migrations\202107151738278_init.resx">
-      <DependentUpon>202107151738278_init.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="Migrations\202107151730406_init2.resx">
-      <DependentUpon>202107151730406_init2.cs</DependentUpon>
->>>>>>> Stashed changes
-    </EmbeddedResource>
+    <Folder Include="Migrations\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
