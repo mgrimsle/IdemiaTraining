@@ -11,9 +11,6 @@ namespace DMV
         {
             // Web API configuration and services
             //Hello
-            //fjsdafsdkfsdjf;adsjf;j
-            //SUP 
-            //22222221111
             // Web API routes
             config.MapHttpAttributeRoutes();
 
