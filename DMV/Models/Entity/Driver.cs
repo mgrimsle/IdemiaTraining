@@ -1,18 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+
 
 namespace DMV.Models
 {
-    public class DriverModel
+    public class Driver
     {
+        [Required]
+        [Key]
+        public int Driver_ID { get; set; }
         [Required]
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         [Required]
         public string LastName { get; set; }
-
+        public DriversLicense License { get; set; }
     }
 }

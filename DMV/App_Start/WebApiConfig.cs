@@ -14,6 +14,7 @@ namespace DMV
 
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver =
                 new CamelCasePropertyNamesContractResolver();
+            AutofacConfig.Register();
             // Web API configuration and services
             // Web API routes
             AutofacConfig.Register();
